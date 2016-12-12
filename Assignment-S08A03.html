@@ -1,0 +1,25 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+
+  <meta charset="utf-8">  
+  <title>Hide all input fields within the form</title>  
+</head>  
+<body>  
+ <form  name='form'>  		<!-- Form Elements -->
+ 	<h3>All Elements hide !</h3> 
+  First name: <input type="text" name="fname"><br>  
+  Last name: <input type="text" name="lname"><br>  
+  <input type="submit" value="Submit"> 
+  <div id="texthere"></div>
+
+</form>  
+</body>  
+
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- Jquery Library -->
+<script type="text/javascript">	/*Script for Hide Elements*/
+$(document).ready(function(){	/*DOM Ready Function*/
+	$( form.elements ).hide();	 /*Elements Hide Function*/
+});	
+</script>
+</html>  
